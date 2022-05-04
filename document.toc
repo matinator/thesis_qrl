@@ -1,0 +1,6 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction to Deep Reinforcement Learning and Quantum Computing}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Approaches of learning}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Reinforcement Learning}{5}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Markov Decision Process}{5}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Value iteration}{6}{subsubsection.1.2.2}%

@@ -1,0 +1,38 @@
+\documentclass[12pt,a4paper]{article}
+%packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{positioning,angles,quotes}
+\usepackage[acronym]{glossaries}
+%glossary 
+\newacronym{qrl}{QRL}{Quantum Reinforcement Learning}
+\newacronym{ai}{AI}{Artificial Intelligence}
+\newacronym{drl}{DRL}{Deep Reinforcement Learning}
+\newacronym{rl}{RL}{Reinforcement Learning}
+\newacronym{qc}{QC}{Quantum Computing}
+\newacronym{nn}{NN}{Neural Networks}
+\newacronym{mdp}{MDP}{Markov Decision Process}
+\newacronym{vqa}{VQA}{Variational Quantum Algorithm}
+\makenoidxglossaries
+%settings
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Matteo Conterno}
+\title{Prospects of quantum computing approach to reinforcement learning}
+%start of document
+\begin{document}
+	\maketitle
+	\include{chapters/abstract}
+	{
+	 	\hypersetup{hidelinks}
+		\tableofcontents
+	}
+	
+	\include{chapters/Introduction.tex}
+\end{document}
