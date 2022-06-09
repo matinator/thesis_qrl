@@ -3,15 +3,24 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{tikz}
-\usetikzlibrary{positioning,angles,quotes}
+\usepackage{mathtools}
 \usepackage[acronym]{glossaries}
+\usepackage[backend=biber,
+style=numeric,
+citestyle=phys,
+]{biblatex} 
+\addbibresource{cit.bib}
+\usetikzlibrary{positioning,angles,quotes}
 %glossary 
+\makeglossaries
 \newacronym{qrl}{QRL}{Quantum Reinforcement Learning}
 \newacronym{ai}{AI}{Artificial Intelligence}
 \newacronym{drl}{DRL}{Deep Reinforcement Learning}
@@ -20,7 +29,11 @@
 \newacronym{nn}{NN}{Neural Networks}
 \newacronym{mdp}{MDP}{Markov Decision Process}
 \newacronym{vqa}{VQA}{Variational Quantum Algorithm}
-\makenoidxglossaries
+\newacronym{iid}{i.i.d.}{indipendent identical distributed}
+\newacronym{dqn}{DQN}{Deep Q-Network}
+\newacronym{sac}{SAC}{Soft-Actor Critic}
+\newacronym{a2c}{A2C}{Actor-Critic}
+\newacronym{ppo}{PPO}{Proximal Policy Optimization}
 %settings
 \usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
 \author{Matteo Conterno}
@@ -28,11 +41,18 @@
 %start of document
 \begin{document}
 	\maketitle
+	
 	\include{chapters/abstract}
 	{
 	 	\hypersetup{hidelinks}
 		\tableofcontents
 	}
-	
+    \newpage
+	\printglossary[type=\acronymtype]
 	\include{chapters/Introduction.tex}
+	
+	\printbibliography[
+	heading=bibintoc,
+	title={Bibliography}
+	]
 \end{document}
