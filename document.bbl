@@ -428,6 +428,92 @@
       \verb http://arxiv.org/abs/1801.01290
       \endverb
     \endentry
+    \entry{10.2307/2276774}{article}{}
+      \name{author}{1}{}{%
+        {{hash=97c17720b08538db4ed8190a1c7bee58}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Edwin\bibnamedelima B.},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor & Francis, Ltd.]}%
+      }
+      \strng{namehash}{97c17720b08538db4ed8190a1c7bee58}
+      \strng{fullhash}{97c17720b08538db4ed8190a1c7bee58}
+      \strng{bibnamehash}{97c17720b08538db4ed8190a1c7bee58}
+      \strng{authorbibnamehash}{97c17720b08538db4ed8190a1c7bee58}
+      \strng{authornamehash}{97c17720b08538db4ed8190a1c7bee58}
+      \strng{authorfullhash}{97c17720b08538db4ed8190a1c7bee58}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{01621459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{158}
+      \field{title}{Probable Inference, the Law of Succession, and Statistical Inference}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{volume}{22}
+      \field{year}{1927}
+      \field{urldateera}{ce}
+      \field{pages}{209\bibrangedash 212}
+      \range{pages}{4}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2276774
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2276774
+      \endverb
+    \endentry
+    \entry{Schuld2021}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=566bc76219b4c730f8c2d46f5dcc455a}{%
+           family={Schuld},
+           familyi={S\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b215190f542b12fd214896e21eff64b}{%
+           family={Petruccione},
+           familyi={P\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{fullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{bibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authorbibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authornamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authorfullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This chapter presents one of the most important parts of quantum machine learning algorithms, namely strategies with which a single data point, or sometimes an entire dataset, can be encoded into quantum states. We present quantum routines for this task, discuss their runtimes and review their interpretation as feature maps known in classical machine learning.}
+      \field{booktitle}{Machine Learning with Quantum Computers}
+      \field{isbn}{978-3-030-83098-4}
+      \field{title}{Representing Data on a Quantum Computer}
+      \field{year}{2021}
+      \field{pages}{147\bibrangedash 176}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1007/978-3-030-83098-4_4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-030-83098-4_4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-030-83098-4_4
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

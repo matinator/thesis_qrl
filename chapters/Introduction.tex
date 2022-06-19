@@ -19,7 +19,6 @@ The approach of learning specify how the model can learn to complete his task. A
 \end{itemize}
 This thesis will focalize mainly on the reinforcement learning approach and especially on the \acrfull{drl} which uses \acrfull{nn} to define the most optimal agent.
 In this thesis the focus is on what kind of advantage can be obtained by using a quantum algorithm such as \acrfull{vqa}, this technique can be even used in other context and applications. Futhermore it has been demostrated that \acrshort{vqa} and \acrshort{nn} share some similarities and properties. The main drawback is the fact that when a \acrshort{vqa} is trained on a classical device, there is a major overhead of time due to simulation of the quantum circuit implemented and the number of qubits is limited.
-\newpage
 %sub section of reinforcement learning
 \subsection{Reinforcement Learning}
 As said earlier a reinforcement learning approach consist of creating the most optimal agent able to complete a predefined task by interacting with the environment and taking some action. Questions arises about: how can be defined if an action is good or bad? How to model a dynamic environment? The answer is given by using a statistical model called \acrfull{mdp} .
@@ -132,7 +131,6 @@ This Tabular Q-learning present major drawbacks such as:
 	\item  Complete iteration over all possible states is required in order to extract the values that will be stored inside the memory table
 \end{itemize} 
 In order to resolve these drawbacks a new type of Q-learning algorithm called \textbf{Tabular Q-learning} was invented. The main difference is the lack of necessity to iterate over all the states to optimize because only the ones obtained from the environment will be used for optimization. Futhermore the table will only contain the $Q(s,a)$, this does not unfortunately resolve completely the drawback to have a large memory table, but at least reduce it.
-\newpage
 \begin{algorithm} \label{Tabular Q-learning}
 	\caption{Tabular Q-learning}
 	\begin{algorithmic}
@@ -173,6 +171,7 @@ Generally the following point are required to train a neural network to solve an
 	\item Update $Q(s,a)$ using an optimizer algorithm to minimize loss.
 	\item Repeat from step 2 until convergence or goal reached.
 \end{enumerate}
+
 Even if it looks simple, some modifications are required in other to ensure convergence.
 First of all when it is necessary to store the experience we need to find a strategy to explore the environment and optimize the current approximation, this is often referred to "exploration versus exploitation". In order to have an efficient solution it is good to behave randomly at the beginning because Q-value approximation is bad at that time and later start to act using the Q-value obtained. Usually it is used the \textbf{epsilon-greedy method} where a random probability value is sampled from a uniform distribution and confronted with a probability $\epsilon$  that tells the algorithm to behave randomly. $\epsilon$ is usually initialized to 1 so that any kind of random value sampled is smaller to $\epsilon$ so that the model behave randomly and later $\epsilon$ is decreased to a final small value so that the model will not always behave randomly but use the Q-values approximated. 
 After that this problem is solved, there is another matter linked to how an optimizer algorithm work on a \acrshort{nn}. The gradients calculated from input data requires that the data are \acrshort{iid}, otherwise there would be incorrect estimations of the correct direction on which the parameters must be updated. Furthermore the data must not be completely randomic but must reflect the past actions taken in order to have an experience that tells which action are worst than others. To solve this, it is necessary to create a \textbf{large memory buffer} in order to store the past actions taken both randomic and by exploiting the agent.
@@ -198,7 +197,7 @@ The following pseudo is taken from the original paper that was tested on atari g
 	\STATE Every $n$ steps copy weights of $Q$ to $\hat{Q}$
 	\ENDWHILE		
 	\end{algorithmic}
-\end{algorithm}
+\end{algorithm}\\
 
 The \ref{DQN} gave a breakthrough on this field thanks to the fact that was able to achieve a human-like, and in some cases even better, performance on multiple games of the atari. Thanks to this \acrlong{drl} has been tested and applied in other contexts such as finance, medicine, robotics and many others. Before we introduce quantum computing it is necessary to explain and describe another algorithm that is able to handle \acrlong{mdp} without the value iteration method: \textbf{policy gradient methods}.
 \subsubsection{Policy gradient methods}
@@ -245,6 +244,223 @@ The problems of this algorithm is the fact that is on-policy and sensible to hyp
 		J_{\pi}(\phi)= \mathbb{E}_{s \sim S, \epsilon_t \sim \mathcal{N}}\left[ \log \pi_{\phi}(f_\phi(\epsilon_t;s_t)) - Q_{\theta}(s_t, f_\phi(\epsilon_t;s_t))\right]
 	\end{equation}
 \end{itemize}
-For more details on how these formulas have been obtained and experimental results refer to the original paper \cite{DBLP:journals/corr/abs-1801-01290}, for simplicity only the pseudocode will be showed considering that there will be slight modifications in the actual code used to correctly confront classical and quantum.
-\subsection{Quantum computing: an introduction}
+For more details on how these formulas have been obtained and experimental results refer to the original paper \cite{DBLP:journals/corr/abs-1801-01290}, to avoid confusion the pseudocode will be showed later considering that there are variations from the original implementation to create a quantum version, so that later it would be possible to confront classical and quantum algorithm.
+\subsection{Quantum computing}
+Quantum computing is a field that originated around the 1980s by numerous physicists, Paul Benioff was first to introduce the idea of a Turing machine that used quantum mechanics to make calculation. Richard Feynman and Yuri Manin suggested to use it for efficient simulation on quantum mechanics systems. Futhermore David Deutsch asked if using physical laws it was possible to derive a stronger version of the Church-Turing thesis introducing the concept of Universal Quantum Computing, this conjecture isn't still demonstrated but has paved the way for current concept. In order to introduce quantum computing it is necessary to understand what is a quantum bit, circuit and logic gate, keeping in mind that even if the following representation is an abstraction there is a physical implementation for all this components.
+\subsubsection{Quantum bits}
+Quantum bits or qubits are the analogous of classical bits which are used as a fundamental concept for computation and information forming a computational bases states. As the bits can have two possible states 0 and 1, the qubits, thanks to the discretized energy on a microscopic level, can have a quantum state $\ket{0}$ and $\ket{1}$. Differently from their classical counterparts and thanks to the quantum mechanics, the qubits can be in a possible \textit{linear combination} even known as \textit{superposition} of states:
+\begin{equation}\label{superposition}
+	\ket{\psi} = \alpha \ket{0} + \beta \ket{1}
+\end{equation}
+The numbers $\alpha$ and $\beta$ are complex even known as \textit{amplitudes}, so a qubit can be represented as a two-dimensional complex vector space. A fundamental condition is applied on these numbers to respect the statistical view of quantum mechanics, when a qubit is measured a probability of being on the quantum state is associated. These probabilities can be represented as $|\alpha|^2$ to be in state $\ket{0}$ and $|\beta|^2$ in state $\ket{1}$, for natural statistic normalization these number must have the condition $|\alpha|^2 + |\beta|^2 = 1$.Geometrically this can be interpreted as the fact that qubit states must be normalized in order to have length 1 and be rewritten using real numbers as:
+\begin{equation}
+	\ket{\psi} = e^{i\gamma} \bigg( \cos{\frac{\theta}{2}} \ket{0} + e^{i\varphi} \sin{\frac{\theta}{2}} \ket{1}\bigg)
+\end{equation}
+with $\gamma, \theta, \varphi \in R$. Due to the fact that there are no observables effects with a global phase, it is possible to ignore $e^{i\gamma}$ giving the reduced formula:
+\begin{equation}\label{angle qubits}
+	\ket{\psi} = \cos{\frac{\theta}{2}} \ket{0} + e^{i\varphi} \sin{\frac{\theta}{2}} \ket{1}
+\end{equation}
+This allows to introduce a three-dimensional sphere representation called \textbf{Bloch sphere} showed in figure \ref{bloch sphere}, which allows to represented any possible superposition of states in a qubit.
+\begin{figure}[h]
+	\centering
+	\scalebox{1.8}{
+	\begin{tikzpicture}[line cap=round, line join=round, >=Triangle]
+		\clip(-2.19,-2.49) rectangle (2.66,2.58);
+		\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (56.7:0.4) arc (56.7:90.:0.4) -- cycle;
+		\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (-135.7:0.4) arc (-135.7:-33.2:0.4) -- cycle;
+		\draw(0,0) circle (2cm);
+		\draw [rotate around={0.:(0.,0.)},dash pattern=on 3pt off 3pt] (0,0) ellipse (2cm and 0.9cm);
+		\draw (0,0)-- (0.70,1.10);
+		\draw [->] (0,0) -- (0,2);
+		\draw [->] (0,0) -- (-0.81,-0.79);
+		\draw [->] (0,0) -- (2,0);
+		\draw [dotted] (0.7,1)-- (0.7,-0.46);
+		\draw [dotted] (0,0)-- (0.7,-0.46);
+		\draw (-0.08,-0.3) node[anchor=north west] {$\varphi$};
+		\draw (0.01,0.9) node[anchor=north west] {$\theta$};
+		\draw (-1.10,-0.72) node[anchor=north west] {$\mathbf {\hat{x}}$};
+		\draw (2.07,0.3) node[anchor=north west] {$\mathbf {\hat{y}}$};
+		\draw (-0.5,2.6) node[anchor=north west] {$\mathbf {\hat{z}=|0\rangle}$};
+		\draw (-0.4,-2) node[anchor=north west] {$-\mathbf {\hat{z}=|1\rangle}$};
+		\draw (0.4,1.65) node[anchor=north west] {$\ket{\psi}$};
+		\scriptsize
+		\draw [fill] (0,0) circle (1.5pt);
+		\draw [fill] (0.7,1.1) circle (0.5pt);
+	\end{tikzpicture}
+	}
+	\caption[The bloch sphere]{Representation of a qubit the Bloch sphere}
+	\label{bloch sphere}
+\end{figure}
 
+This formalism can be extended  for the case of multiple qubits, if for example a system is composed of two separable qubits $\ket{\psi}$ and $\ket{\phi}$ then it is possible to construct their representation $\ket{\nu}$ using the dot product as follows:
+\begin{align*}
+	\ket{\psi} &= \alpha \ket{0} + \beta \ket{1} \qquad
+	\ket{\phi} = \gamma \ket{0} + \delta \ket{1}\\
+	\ket{\nu} &= \ket{\psi} \otimes \ket{\phi} = \alpha\gamma \ket{00} + \alpha\delta \ket{01} + \beta\gamma \ket{10} + \beta\delta\ket{11}\\
+\end{align*}
+The previous form of $\ket{00}$ is only an abbreviation for the form $\ket{0} \otimes \ket{0}$,
+normalization must be still valid so the sum of all amplitudes squared must give 1, in other words $|\alpha\gamma|^2  + |\alpha\delta|^2  + |\beta\gamma|^2  + |\beta\delta|^2 = 1$ if that is not the case it is possible to normalize it dividing by the root square of the squared sum. As it can be seen with only two qubits there are four quantum states, if for example we had $N$ qubits then there would be $2^N$ possible states giving a tremendous advantage on the information that can be stored instead of the classical approach.
+Furthermore thanks to the fact that this is a multi dimensional space a matrix representation to give the following formalism:
+\begin{align*}
+	\ket{0} =   
+		\begin{bmatrix}
+			1 \\
+			0
+		\end{bmatrix}
+	\qquad
+	\ket{1} &=
+	   \begin{bmatrix}
+	   	0 \\
+	   	1
+	   \end{bmatrix}
+    \qquad
+    \ket{\psi} =
+   		\begin{bmatrix}
+   		 \alpha \\
+   		 \beta
+   		\end{bmatrix}
+   	\qquad
+   	\ket{\phi} =
+   		\begin{bmatrix}
+   		\gamma \\
+   		\delta
+   		\end{bmatrix}\\
+   		\ket{\nu} &= \ket{\psi} \otimes \ket{\phi} = 
+   		\begin{bmatrix}
+   			\alpha\gamma & \alpha\delta\\
+   			\beta\gamma  & \beta\delta
+   		\end{bmatrix}\\
+\end{align*}
+In case a measurement is applied on subsets of qubits, for example on the first qubit measuring if the state is $\ket{0}$ then the post-measurement state will be:
+\begin{equation}\label{post measurement}
+		\ket{\nu'} = \frac{\alpha\gamma\ket{00} + \alpha\delta \ket{01}}{\sqrt{|\alpha\gamma|^2 + |\alpha\delta|^2}}
+\end{equation}
+the denominator is due to normalization after measurement in order to respect the condition that squared amplitudes summed is 1.\\
+Quantum mechanics allows even some particular states called \textit{Bell states or EPR pair} which are not separable such as this one:
+\begin{equation}\label{bell state}
+	\frac{\ket{00} + \ket{11}}{\sqrt{2}}
+\end{equation}
+even if it seems to be completely normal, notice that in case a measurement is applied on any of the two qubits it is possible to know immediately with certainity what state is in the other one. So there is a \textit{correlation} between the qubits, point is that this type of correlation is \textbf{stronger than any kind that could exist classicaly}. This correlation is known as \textbf{entanglement}, is at the basis of many quantum algorithms and has been proven to be valid even on distance of galaxies. This doesn't violate Einstein general relativity because the information even if using this quantum property in any case can't exceed the speed of light. Now that the separated and entangled states have been introduced it is time to see how the qubits can be manipulated using the \textbf{gates and circuits}.
+\subsubsection{Quantum gates and circuits}
+As classical computation uses \textit{wires} amd \textit{logic gates}, quantum computing does the same. Main difference is that for example quantum gates such as the equivalent quantistic NOT act linearly instead of non-linearly, the reason is due to the fact that if non-linearity was allowed then empirically there would be paradoxes, such as violations of the second law of thermodynamics, faster than light communications and time travels. Taking advantage of the linear proprierty it is possible to give a matrix form of such as NOT, in fact a NOT gate classicaly invert 0 to 1, what happens on quantum computing is:
+\begin{equation*}
+	\alpha \ket{0} + \beta \ket{1} \to \beta \ket{0} + \alpha \ket{1}
+\end{equation*}
+in matrix form it can be translated as:
+\begin{equation*}
+	X = \begin{bmatrix}
+		0 & 1 \\
+		1 & 0
+	\end{bmatrix}
+	\to
+	X \begin{bmatrix}
+		\alpha \\
+		\beta
+	\end{bmatrix}
+	= \begin{bmatrix}
+		\beta \\
+		\alpha
+	\end{bmatrix}
+\end{equation*}
+In addition to the linearity of quantum gates, it is necessary to remember that these operations must respect the condition of normalization equal to 1. This can be translated to the condition that any matrix $U$ representing a quantum gate, must be unitary. This can be formalized using the \textit{adjoint} of $U^\dag$, which means complex conjugating and transposing the elements of U, as the condition $U^\dag U = 1$. This can be even interpreted as the fact that any kind of quantum operation applied is reversible, so by applying another one is possible to return at the initial state, which quantistically is the adjoint of operation applied.
+The most used single qubit gates are the following:
+\begin{equation*}
+	X = \begin{bmatrix}
+		0 & 1 \\
+		1 & 0 
+	\end{bmatrix}\qquad
+	Y = \begin{bmatrix}
+		0 & -i \\
+		i & 0
+	\end{bmatrix}\qquad
+	Z = \begin{bmatrix}
+		1 & 0 \\
+		0 & -1 
+	\end{bmatrix}
+	H = \frac{1}{\sqrt{2}}\begin{bmatrix}
+		1 & 1 \\
+		1 & -1
+	\end{bmatrix}
+\end{equation*}
+there are other gatex such as S, T and I, for the thesis they will not be necessary, but if interested feel free to check the book(put reference Nielsen Chang).The interesting part is that any kind of single qubit gate can be obtained from the generic form:
+\begin{equation}\label{generic gate}
+	U(\theta,  \phi, \lambda) =  \begin{bmatrix}
+		\cos(\frac{\theta}{2}) & -e^{i\lambda} \sin(\frac{\theta}{2})\\
+		e^{i\phi}\sin(\frac{\theta}{2}) & e^{i(\phi+ \lambda)}\cos(\frac{\theta}{2})
+	\end{bmatrix}
+\end{equation}
+for confirmation as an example notice that $H = U(\frac{\pi}{2}, 0, \pi)$.\\
+Now as there a single qubit gates, it is possible to extend the concept introducing \textbf{multiple qubit gates}. These, differently from the single qubits using multiple of them, for example one that will be used extensively is the \textit{controlled-NOT} or CNOT gate which has the following form:
+\begin{align*}
+	& \Qcircuit{
+		\lstick{\ket{a}} & \ctrl{1} & \rstick{\ket{a}} \qw \\
+		\lstick{\ket{b}} & \targ & \rstick{\ket{b \oplus a}} \qw
+	}\\
+	& \\
+	CNOT &= \begin{bmatrix}
+		1 & 0 & 0 & 0 \\
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 0 & 1 \\
+		0 & 0 & 1 & 0
+	\end{bmatrix}
+\end{align*} 
+This gate function by using a control qubit which is the black dot and only if the control qubit is $\ket{1}$ applies to the target qubit $\oplus$ which is the addition modulo two operation that on a two basis computational state means to flip it. The horizontal line repreent the wire used to transfer the qubit. Formally CNOT is defined as:
+\begin{equation*}
+	\ket{00} \to \ket{00} \qquad \ket{01} \to \ket{01} \qquad \ket{10} \to \ket{11} \qquad \ket{11} \to \ket{10}
+\end{equation*}
+The import point is that this circuit is like it applies an $X$ gate, in fact it is possible to subsitute with other single qubit gate. There are other multi qubit gates such as \textit{toffoli}, \textit{swap} and many others, but they will not be used in this thesis.
+The reason for which \textbf{CNOT is largely used because it can introduce the entanglement effect on qubits}, this is particularly important to efficiently explot the quantum advantage. For example the \ref{bell state} can be obtained with the following circuit:
+\begin{equation*}
+	\Qcircuit{
+		\lstick{\ket{0}} & \gate{H} &\ctrl{1} & \qw \\
+		\lstick{\ket{0}} & \qw & \targ & \qw
+	}
+\end{equation*}
+Now that gates and wires have been introduced it is not necessary to introduce onle last component the measurement gate, in fact after the qubits are manipulated it is necessary to extract the information on these. In order to do that a measurement basis can be decided and quantum computing allows more than the classical basis of $\ket{0}$ and $\ket{1}$, but only this one will be used.As said the measurement consist of extracting information, but for the quantistic case this means distinguish the possible states, this is represented with the following symbol on circuits:
+\begin{equation*}
+	\Qcircuit @C=1em @R=.7em {
+		& \meter & \qw
+	}
+\end{equation*}
+This measurement on the computational basis consist on using projectors of the possible eigenspaces, for the case of a generic qubit state projectors are $P_{0} = \ket{0} \bra{0}$ and $P_1 = \ket{1} \bra{1}$. The probability associated to be in one state, for example $\ket{0}$ can be defined as:
+\begin{equation*}
+	p(0) = tr(P_0 \ket{\psi}\bra{\psi}) = \bra{\psi}P_0\ket{\psi} = |\alpha_0|^2
+\end{equation*}
+The fully observable corresponding to a computational basis measurement is the Pauli-Z operator or the Z gate:
+\begin{equation*}
+	\sigma_z = \ket{0} \bra{0} - \ket{1}\bra{1} = Z
+\end{equation*}
+To work with quantum computing it is necessary to use statistics and in order to have the correct expectation value of $<\sigma_z>$ it is necessary to repeat multiple times the measurement to sample the possible values, his is usually represented as $S$ which is an abbreviation for \textit{shots}. In order to have the correct expectation with an error of at most $\epsilon$ conventional statistics can be used for example using the Bernoulli distribution.
+Error gives a confidence interval $[p-\epsilon, p + \epsilon]$ which tells the proportion of samples that are in the interval. Statistically this can be associated to a $z$-value.
+Estimating the error of a Bernoulli trial can be defined in different  ways, but the most preferred ways is by using the Wilson score interval \cite{10.2307/2276774}. Following that formula the overall error of estimation is bounded by the following equation:
+\begin{equation*}
+	\epsilon \le \sqrt{z^2 \frac{S +z^2}{4S^2}}
+\end{equation*}
+which can be inverted to calculate the S required:
+\begin{equation*}
+	S \le \frac{\epsilon^2 \sqrt{\frac{z^4(16\epsilon^2 + 1)}{\epsilon^4}} + z^2}{8\epsilon^2}
+\end{equation*}
+\subsubsection{Quantum decoherence}
+There is phenomenon that needs to be considered when a quantum device is effectively used and that is \textbf{quantum decoherence}. The phenomenon is refeered to the effect of losing quantum coherence, this is obtained when the phase relation of the wave functions associated to different states is not valid anymore. This effects is mainly due to the fact that qubits are not completely isolated and interactions with environment introduce entanglement between them. The effect of quantum decoherence is problematic because implies loss of information stored.\\
+This effect for quantum computing introduces non-linearity and is usually considered through quantities called \textit{decoherence times}. These are defined as $T_1$ and $T_2$, $T_1$ refers to \textit{relaxation time} which is the time taken to transition from $\ket{1} \to \ket{0}$. $T_2$ refers instead to \textit{dephasing time} that is the time for which qubits phase remains intact. These times are usually combined and used as costant decays for statistically say when quantum decoherence affect the qubits. Application of quantum gates influence the system by increasing the possibility of decoherence, for this reason \textbf{quantum error correction} has been developed. Problem is that these algorithms for error correction requires a lot of qubits and actually there are not physical devices with this capacity.\\
+In order to deal with the quantum decoherence from environment and gates, new types of algorithms have been created with the requirement to use the least number of gates and operations required to successfully extract information.
+\subsubsection{Encoding algorithms}
+Working with quantum computers requires that information which needs to be analyzed and transformed needs to quantistic, there are different ways to encode: \textit{basis encoding, amplitude encoding, angle encoding.} There are even others in \cite{Schuld2021}, but these will be the ones used in this thesis.
+Basis encoding is based on the fact that any bit is substituted with the qubit having corrisponding state value, for example $01001$ becomes $\ket{01001}$ using this strategy. As it is possible to notice this representation is not qubit efficent because it requires the same number of qubits for the associated bit of value, but the routine don't require many operations. Another strategy of encoding is called \textit{amplitude encoding}, which consist of taking the value of a classical vector $x$, normalize the values inside by normalizing the elements and associate to them an amplitude, like in this exxample:
+\begin{align*}
+	& x \to \sum_{k=1}^{2^n}|x_k| ^ 2 = 1 \\
+	&x = \begin{bmatrix}
+		x_1 \\
+		\vdots \\
+		x_{2^n}
+	\end{bmatrix}
+	 \leftrightarrow
+	 \ket{x} = \sum_{j} x_j \ket{j}
+\end{align*}
+this kind of representation requrires very few qubits, but the routine required to encoded it is not applicable on the actual physical devices for their limited capabilities. The last strategy is the \textit{angle encoding} which consist on applying a rotation of the classical value along one axis, this is used because it can exhibit some similarities and proprierties to the amplitude encoding. It is not qubit efficient, but the routine can be applied using actual devices, formally it can be defines as follows:
+\begin{equation*}
+	x \to \ket{x} = \otimes_{i}^{n} R(x_i) \ket{0^i}
+\end{equation*}
+where $R$ can be $R_x, R_y, R_x$ so it is only necessary to apply one single rotation gate over every qubit using as angle the classical value.
+\subsection{Summary}
+In this section it has been introduced reinforcement learning, deep reinforcement learning and quantum computing. It has been introduced the \acrlong{mdp} and Q-learning as basis for \acrlong{drl} and algorithms such as \acrlong{dqn} and \acrlong{sac} has been showed to deal with environments that can be discrete and continous. Futhermore it has been introduced quantum computing from the definition of qubits to gates and circuits. Quantum decoherence has been introduced such as one of the main limitations to the application of quantum algorithms using actual devices and encoding startegies has been explained on how to convert classical into quantum information. Now that introduction is finished, time has come to see how Quantum algorithms such as \acrfull{vqa} can be used to solve difficult environments and are applicable to actual \acrfull{qpu}.

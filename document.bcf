@@ -2356,15 +2356,19 @@
     <bcf:citekey order="7">DBLP:journals/corr/WangBHMMKF16</bcf:citekey>
     <bcf:citekey order="8">DBLP:journals/corr/SchulmanWDRK17</bcf:citekey>
     <bcf:citekey order="9">DBLP:journals/corr/abs-1801-01290</bcf:citekey>
-    <bcf:citekey order="10">Rosenblatt1958ThePA</bcf:citekey>
-    <bcf:citekey order="11">backpropagation</bcf:citekey>
-    <bcf:citekey order="12">universals</bcf:citekey>
-    <bcf:citekey order="13">DBLP:journals/corr/MnihKSGAWR13</bcf:citekey>
-    <bcf:citekey order="14">DBLP:journals/corr/HasseltGS15</bcf:citekey>
-    <bcf:citekey order="15">10.5555/3009657.3009806</bcf:citekey>
-    <bcf:citekey order="16">DBLP:journals/corr/WangBHMMKF16</bcf:citekey>
-    <bcf:citekey order="17">DBLP:journals/corr/SchulmanWDRK17</bcf:citekey>
-    <bcf:citekey order="18">DBLP:journals/corr/abs-1801-01290</bcf:citekey>
+    <bcf:citekey order="10">10.2307/2276774</bcf:citekey>
+    <bcf:citekey order="11">Schuld2021</bcf:citekey>
+    <bcf:citekey order="12">Rosenblatt1958ThePA</bcf:citekey>
+    <bcf:citekey order="13">backpropagation</bcf:citekey>
+    <bcf:citekey order="14">universals</bcf:citekey>
+    <bcf:citekey order="15">DBLP:journals/corr/MnihKSGAWR13</bcf:citekey>
+    <bcf:citekey order="16">DBLP:journals/corr/HasseltGS15</bcf:citekey>
+    <bcf:citekey order="17">10.5555/3009657.3009806</bcf:citekey>
+    <bcf:citekey order="18">DBLP:journals/corr/WangBHMMKF16</bcf:citekey>
+    <bcf:citekey order="19">DBLP:journals/corr/SchulmanWDRK17</bcf:citekey>
+    <bcf:citekey order="20">DBLP:journals/corr/abs-1801-01290</bcf:citekey>
+    <bcf:citekey order="21">10.2307/2276774</bcf:citekey>
+    <bcf:citekey order="22">Schuld2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
