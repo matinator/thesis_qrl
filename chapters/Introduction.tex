@@ -33,7 +33,7 @@ It is necessary to note that an \acrshort{mdp} is based on Markov Chains that no
 	\item $R_{a}(s,s')$ is the immediate reward obtained by transitioning from state $s$ to $s'$ by action $a$
 \end{itemize}
 The difference with a Markov chains is the presence of $P_a (s, s')$ and $R_{a}(s,s')$ which are necessary for the decision process, to see an example graph of and MDP see Figure \ref{fig:mdpgraph}.
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\begin{tikzpicture}[thick,scale=1.46, every node/.style={transform shape}, line width=0.6mm]
 		\tikzstyle{round}=[thick,draw=black,circle]
@@ -125,6 +125,7 @@ The problem is that in many situations we don't know how the value of actions, r
 		\ENDWHILE
 	\end{algorithmic}
 \end{algorithm}\\
+
 This Tabular Q-learning present major drawbacks such as:
 \begin{itemize}
 	\item A large memory table is required to store all the values used to approximate the $Q(s,a)$ values that will be used for the $\pi(s|a)$
@@ -150,7 +151,8 @@ In order to resolve these drawbacks a new type of Q-learning algorithm called \t
 			\ENDIF
 		\ENDLOOP
 	\end{algorithmic}
-\end{algorithm}
+\end{algorithm}\\
+
 As noted, a memory table is required but only to store the $Q(s,a)$ values and it will be used to update itself and to define which action need to be taken following the policy.
 There is still one major problem though, this algorithm will struggle if there is a large count of the observables state set. This, in many real life situation, is quite common for example on the Cartpole environment of OpenAI gym that we are going to use there are only 4 states, but the interval of values that can be taken is enormous.
 A solution of this problem would be to use a non-linear representation of action and state into a value. This is a typical "regression problem" in the field of machine learning and thanks to the power of \acrfull{nn} it is possible to approximate any kind of linear or non-linear function given enough data. Fortunately the amount of data is almost limitless thanks to the fact that if new data is needed, the only requirement is to interact more with the given environment.So now, it will be introduced the \textbf{Deep Q-learning} algorithm.
@@ -211,7 +213,7 @@ the complete demonstration of the formula and application on \acrlong{drl} can b
 There are some drawbacks for this approach such as a high gradients variance that can influence the learning and exploration at the beginning of training and to avoid falling in a local minima it is necessary to introduce some kind of uncertainty or \textit{entropy}. There is another problem of policy gradient methods and that is the fact that are usually less sample-efficient and this implies a bigger numeber of iterations to solve the environment. In order to tackle this problems new algorithms have been defined, notably \acrfull{a2c} [\cite{DBLP:journals/corr/WangBHMMKF16}], \acrfull{ppo}[\cite{DBLP:journals/corr/SchulmanWDRK17}] and others which tries to reap the benefits of policy and value methods. This thesis will use the \acrfull{sac} algorithm on a robotic environment and later will confront it with the quantum type.
 \subsubsection{Soft Actor Critic}
 This algorithm can be seen as a variation of Actor-Critic, the latter one can be simplified as the necessity to improve the behaviour and values of states approximated in order to solve the environment. In order to achieve this two neural networks are used: one to approximate the policy called \textbf{policy net or actor} and one to approximate the value of state called \textbf{value net or critic}.
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering 
 	\begin{tikzpicture}[thick,scale=1.46, every node/.style={transform shape}, line width=0.6mm]
 		\node[rectangle, draw] (obs) {Observation($s$)};
@@ -261,7 +263,7 @@ with $\gamma, \theta, \varphi \in R$. Due to the fact that there are no observab
 	\ket{\psi} = \cos{\frac{\theta}{2}} \ket{0} + e^{i\varphi} \sin{\frac{\theta}{2}} \ket{1}
 \end{equation}
 This allows to introduce a three-dimensional sphere representation called \textbf{Bloch sphere} showed in figure \ref{bloch sphere}, which allows to represented any possible superposition of states in a qubit.
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\centering
 	\scalebox{1.8}{
 	\begin{tikzpicture}[line cap=round, line join=round, >=Triangle]
@@ -390,38 +392,40 @@ there are other gatex such as S, T and I, for the thesis they will not be necess
 	\end{bmatrix}
 \end{equation}
 for confirmation as an example notice that $H = U(\frac{\pi}{2}, 0, \pi)$.\\
-Now as there a single qubit gates, it is possible to extend the concept introducing \textbf{multiple qubit gates}. These, differently from the single qubits using multiple of them, for example one that will be used extensively is the \textit{controlled-NOT} or CNOT gate which has the following form:
-\begin{align*}
-	& \Qcircuit{
-		\lstick{\ket{a}} & \ctrl{1} & \rstick{\ket{a}} \qw \\
-		\lstick{\ket{b}} & \targ & \rstick{\ket{b \oplus a}} \qw
-	}\\
-	& \\
-	CNOT &= \begin{bmatrix}
+Now as there a single qubit gates, it is possible to extend the concept introducing \textbf{multiple qubit gates}. These, differently from the single qubits using multiple of them, for example one that will be used extensively is the \textit{controlled-NOT} or CNOT gate which has the following form:\\
+\begin{center}
+	\begin{quantikz}[scale = 3.0]
+		 &  \ctrl{1} & \qw\\
+		 &  \targ{}  & \qw
+	\end{quantikz}
+\end{center}
+\begin{equation*}
+	CNOT = 
+	\begin{bmatrix}
 		1 & 0 & 0 & 0 \\
 		0 & 1 & 0 & 0 \\
 		0 & 0 & 0 & 1 \\
 		0 & 0 & 1 & 0
 	\end{bmatrix}
-\end{align*} 
+\end{equation*} 
 This gate function by using a control qubit which is the black dot and only if the control qubit is $\ket{1}$ applies to the target qubit $\oplus$ which is the addition modulo two operation that on a two basis computational state means to flip it. The horizontal line repreent the wire used to transfer the qubit. Formally CNOT is defined as:
 \begin{equation*}
 	\ket{00} \to \ket{00} \qquad \ket{01} \to \ket{01} \qquad \ket{10} \to \ket{11} \qquad \ket{11} \to \ket{10}
 \end{equation*}
 The import point is that this circuit is like it applies an $X$ gate, in fact it is possible to subsitute with other single qubit gate. There are other multi qubit gates such as \textit{toffoli}, \textit{swap} and many others, but they will not be used in this thesis.
 The reason for which \textbf{CNOT is largely used because it can introduce the entanglement effect on qubits}, this is particularly important to efficiently explot the quantum advantage. For example the \ref{bell state} can be obtained with the following circuit:
-\begin{equation*}
-	\Qcircuit{
-		\lstick{\ket{0}} & \gate{H} &\ctrl{1} & \qw \\
-		\lstick{\ket{0}} & \qw & \targ & \qw
-	}
-\end{equation*}
+\begin{center}
+	\begin{quantikz}[scale = 3.0]
+		\lstick{$\ket{0}$} & \gate{H} &  \ctrl{1} & \qw\\
+		\lstick{$\ket{0}$} & \qw &  \targ{}  & \qw
+	\end{quantikz}
+\end{center}
 Now that gates and wires have been introduced it is not necessary to introduce onle last component the measurement gate, in fact after the qubits are manipulated it is necessary to extract the information on these. In order to do that a measurement basis can be decided and quantum computing allows more than the classical basis of $\ket{0}$ and $\ket{1}$, but only this one will be used.As said the measurement consist of extracting information, but for the quantistic case this means distinguish the possible states, this is represented with the following symbol on circuits:
-\begin{equation*}
-	\Qcircuit @C=1em @R=.7em {
-		& \meter & \qw
-	}
-\end{equation*}
+\begin{center}
+	\begin{quantikz}[scale = 3.0]
+		 & \meter{} & \qw
+	\end{quantikz}
+\end{center}
 This measurement on the computational basis consist on using projectors of the possible eigenspaces, for the case of a generic qubit state projectors are $P_{0} = \ket{0} \bra{0}$ and $P_1 = \ket{1} \bra{1}$. The probability associated to be in one state, for example $\ket{0}$ can be defined as:
 \begin{equation*}
 	p(0) = tr(P_0 \ket{\psi}\bra{\psi}) = \bra{\psi}P_0\ket{\psi} = |\alpha_0|^2
@@ -462,5 +466,6 @@ this kind of representation requrires very few qubits, but the routine required 
 	x \to \ket{x} = \otimes_{i}^{n} R(x_i) \ket{0^i}
 \end{equation*}
 where $R$ can be $R_x, R_y, R_x$ so it is only necessary to apply one single rotation gate over every qubit using as angle the classical value.
-\subsection{Summary}
-In this section it has been introduced reinforcement learning, deep reinforcement learning and quantum computing. It has been introduced the \acrlong{mdp} and Q-learning as basis for \acrlong{drl} and algorithms such as \acrlong{dqn} and \acrlong{sac} has been showed to deal with environments that can be discrete and continous. Futhermore it has been introduced quantum computing from the definition of qubits to gates and circuits. Quantum decoherence has been introduced such as one of the main limitations to the application of quantum algorithms using actual devices and encoding startegies has been explained on how to convert classical into quantum information. Now that introduction is finished, time has come to see how Quantum algorithms such as \acrfull{vqa} can be used to solve difficult environments and are applicable to actual \acrfull{qpu}.
+%%
+%%\subsection{Summary}
+%%In this section it has been introduced reinforcement learning, deep reinforcement learning %%and quantum computing. It has been introduced the \acrlong{mdp} and Q-learning as basis for %%\acrlong{drl} and algorithms such as \acrlong{dqn} and \acrlong{sac} has been showed to deal %%with environments that can be discrete and continous. Futhermore it has been introduced %%quantum computing from the definition of qubits to gates and circuits. Quantum decoherence %%has been introduced such as one of the main limitations to the application of quantum %%algorithms using actual devices and encoding startegies has been explained on how to convert %%classical into quantum information. Now that introduction is finished, time has come to see %%how Quantum algorithms such as \acrfull{vqa} can be used to solve difficult environments and %%are applicable to actual \acrfull{qpu}.

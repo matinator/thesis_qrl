@@ -493,6 +493,7 @@
       \strng{authorbibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
       \strng{authornamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
       \strng{authorfullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -513,6 +514,591 @@
       \verb{url}
       \verb https://doi.org/10.1007/978-3-030-83098-4_4
       \endverb
+    \endentry
+    \entry{Cerezo_2021}{article}{}
+      \name{author}{11}{}{%
+        {{hash=cda5b62144e1a42caba2840a7224b769}{%
+           family={Cerezo},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=655d5e2bade9a389149f8beb0fc5c18c}{%
+           family={Arrasmith},
+           familyi={A\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7bb1dcf8a93d1ecc6f9531ece93ef1fa}{%
+           family={Babbush},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b10a34e16a501939634880eade0cec5e}{%
+           family={Benjamin},
+           familyi={B\bibinitperiod},
+           given={Simon\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c3acfc5e323c389790b828fbf6955f09}{%
+           family={Endo},
+           familyi={E\bibinitperiod},
+           given={Suguru},
+           giveni={S\bibinitperiod}}}%
+        {{hash=569711c363027fed98622c62cda54209}{%
+           family={Fujii},
+           familyi={F\bibinitperiod},
+           given={Keisuke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a253ddc1c4c24cde70238bd45dc9aeff}{%
+           family={McClean},
+           familyi={M\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=80dde347ecbddac8ca3ca422033ac88b}{%
+           family={Mitarai},
+           familyi={M\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=001b5a60b43cad93e93a32a46ae0c874}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=4a995a4c6263a9857f548527d6fff0c5}{%
+           family={Cincio},
+           familyi={C\bibinitperiod},
+           given={Lukasz},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d10bd053b9868d0af6fa53be761e3350}{%
+           family={Coles},
+           familyi={C\bibinitperiod},
+           given={Patrick\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{9f3fe252c8e07ea798c5758094bc02cd}
+      \strng{fullhash}{aeb54beafe59128c13a6651991958563}
+      \strng{bibnamehash}{9f3fe252c8e07ea798c5758094bc02cd}
+      \strng{authorbibnamehash}{9f3fe252c8e07ea798c5758094bc02cd}
+      \strng{authornamehash}{9f3fe252c8e07ea798c5758094bc02cd}
+      \strng{authorfullhash}{aeb54beafe59128c13a6651991958563}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Reviews Physics}
+      \field{month}{8}
+      \field{number}{9}
+      \field{title}{Variational quantum algorithms}
+      \field{volume}{3}
+      \field{year}{2021}
+      \field{pages}{625\bibrangedash 644}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1038/s42254-021-00348-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038%2Fs42254-021-00348-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038%2Fs42254-021-00348-9
+      \endverb
+    \endentry
+    \entry{https://doi.org/10.48550/arxiv.1802.06002}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=5e61ee12360fc49d9013fbf8fe18db89}{%
+           family={Farhi},
+           familyi={F\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ddcc46c5456340da59be4077c7102a27}{%
+           family={Neven},
+           familyi={N\bibinitperiod},
+           given={Hartmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{57f3974107d5250f7a12e05879d6cfb7}
+      \strng{fullhash}{57f3974107d5250f7a12e05879d6cfb7}
+      \strng{bibnamehash}{57f3974107d5250f7a12e05879d6cfb7}
+      \strng{authorbibnamehash}{57f3974107d5250f7a12e05879d6cfb7}
+      \strng{authornamehash}{57f3974107d5250f7a12e05879d6cfb7}
+      \strng{authorfullhash}{57f3974107d5250f7a12e05879d6cfb7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Classification with Quantum Neural Networks on Near Term Processors}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.48550/ARXIV.1802.06002
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1802.06002
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1802.06002
+      \endverb
+      \keyw{Quantum Physics (quant-ph),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{Benedetti_2019}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a72591df50023022dfff6f8200ef27fe}{%
+           family={Benedetti},
+           familyi={B\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7b0705eb00b0ed9248be5aca1aae044a}{%
+           family={Garcia-Pintos},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={Delfina},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d4731342a9cb25de68133aa8018726ab}{%
+           family={Perdomo},
+           familyi={P\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=61f623ab8d246ef79ad40870109ca37b}{%
+           family={Leyton-Ortega},
+           familyi={L\bibinithyphendelim O\bibinitperiod},
+           given={Vicente},
+           giveni={V\bibinitperiod}}}%
+        {{hash=f2eb998d5bda228907365e454dd7f96e}{%
+           family={Nam},
+           familyi={N\bibinitperiod},
+           given={Yunseong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0fde2bb22ba651286b6251542260c1f5}{%
+           family={Perdomo-Ortiz},
+           familyi={P\bibinithyphendelim O\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{78f945f62a9a0d68e82b1c6b7a9e6050}
+      \strng{fullhash}{5fbe37554198e3d03d95674ab6feef29}
+      \strng{bibnamehash}{78f945f62a9a0d68e82b1c6b7a9e6050}
+      \strng{authorbibnamehash}{78f945f62a9a0d68e82b1c6b7a9e6050}
+      \strng{authornamehash}{78f945f62a9a0d68e82b1c6b7a9e6050}
+      \strng{authorfullhash}{5fbe37554198e3d03d95674ab6feef29}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{npj Quantum Information}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{A generative modeling approach for benchmarking and training shallow quantum circuits}
+      \field{volume}{5}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1038/s41534-019-0157-8
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038%2Fs41534-019-0157-8
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038%2Fs41534-019-0157-8
+      \endverb
+    \endentry
+    \entry{Schuld_theorem}{article}{}
+      \name{author}{3}{}{%
+        {{hash=566bc76219b4c730f8c2d46f5dcc455a}{%
+           family={Schuld},
+           familyi={S\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5ad899c94bf216d9a3334f13a79e79b0}{%
+           family={Sweke},
+           familyi={S\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8b74ad1cb03ef3fbf3deed0fe8fd9d1f}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Johannes\bibnamedelima Jakob},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society ({APS})}%
+      }
+      \strng{namehash}{a2e18e1080802841bd8a8642a18b251b}
+      \strng{fullhash}{a2e18e1080802841bd8a8642a18b251b}
+      \strng{bibnamehash}{a2e18e1080802841bd8a8642a18b251b}
+      \strng{authorbibnamehash}{a2e18e1080802841bd8a8642a18b251b}
+      \strng{authornamehash}{a2e18e1080802841bd8a8642a18b251b}
+      \strng{authorfullhash}{a2e18e1080802841bd8a8642a18b251b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{number}{3}
+      \field{title}{Effect of data encoding on the expressive power of variational quantum-machine-learning models}
+      \field{volume}{103}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1103/physreva.103.032430
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1103%2Fphysreva.103.032430
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1103%2Fphysreva.103.032430
+      \endverb
+    \endentry
+    \entry{McClean_2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a253ddc1c4c24cde70238bd45dc9aeff}{%
+           family={McClean},
+           familyi={M\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=915e31fc5958183d06275c3c3e811123}{%
+           family={Boixo},
+           familyi={B\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=80791f3c0f47c56afab9266e364f7223}{%
+           family={Smelyanskiy},
+           familyi={S\bibinitperiod},
+           given={Vadim\bibnamedelima N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=7bb1dcf8a93d1ecc6f9531ece93ef1fa}{%
+           family={Babbush},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ddcc46c5456340da59be4077c7102a27}{%
+           family={Neven},
+           familyi={N\bibinitperiod},
+           given={Hartmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{836c04a8ead66d709fbf0afad5433010}
+      \strng{fullhash}{c126993002e7862bf539c09f21d34637}
+      \strng{bibnamehash}{836c04a8ead66d709fbf0afad5433010}
+      \strng{authorbibnamehash}{836c04a8ead66d709fbf0afad5433010}
+      \strng{authornamehash}{836c04a8ead66d709fbf0afad5433010}
+      \strng{authorfullhash}{c126993002e7862bf539c09f21d34637}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Communications}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{Barren plateaus in quantum neural network training landscapes}
+      \field{volume}{9}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1038/s41467-018-07090-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038%2Fs41467-018-07090-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038%2Fs41467-018-07090-4
+      \endverb
+    \endentry
+    \entry{Grant_2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b1d176833e606713973a4617ef10e618}{%
+           family={Grant},
+           familyi={G\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=87c1e1f5d917ee25158301ca68f9794d}{%
+           family={Wossnig},
+           familyi={W\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bbed4c280130bd2ccc3c81a498a2d679}{%
+           family={Ostaszewski},
+           familyi={O\bibinitperiod},
+           given={Mateusz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a72591df50023022dfff6f8200ef27fe}{%
+           family={Benedetti},
+           familyi={B\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}%
+      }
+      \strng{namehash}{05e40d60659c19fd2074b38b72e4b0a7}
+      \strng{fullhash}{94c0a2107854bc5a961f54aaca368e51}
+      \strng{bibnamehash}{05e40d60659c19fd2074b38b72e4b0a7}
+      \strng{authorbibnamehash}{05e40d60659c19fd2074b38b72e4b0a7}
+      \strng{authornamehash}{05e40d60659c19fd2074b38b72e4b0a7}
+      \strng{authorfullhash}{94c0a2107854bc5a961f54aaca368e51}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantum}
+      \field{month}{12}
+      \field{title}{An initialization strategy for addressing barren plateaus in parametrized quantum circuits}
+      \field{volume}{3}
+      \field{year}{2019}
+      \field{pages}{214}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22331/q-2019-12-09-214
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.22331%2Fq-2019-12-09-214
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.22331%2Fq-2019-12-09-214
+      \endverb
+    \endentry
+    \entry{Schuld2021vqa}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=566bc76219b4c730f8c2d46f5dcc455a}{%
+           family={Schuld},
+           familyi={S\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b215190f542b12fd214896e21eff64b}{%
+           family={Petruccione},
+           familyi={P\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{fullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{bibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authorbibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authornamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authorfullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We explain how parametrised quantum circuits---quantum algorithms that are popular in near-term quantum computing---can be used as machine learning models, and review techniques to analyse and train such quantum models in a deep-learning fashion, including measures of expressivity and trainability, as well as parameter-shift rules.}
+      \field{booktitle}{Machine Learning with Quantum Computers}
+      \field{isbn}{978-3-030-83098-4}
+      \field{title}{Variational Circuits as Machine Learning Models}
+      \field{year}{2021}
+      \field{pages}{177\bibrangedash 215}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1007/978-3-030-83098-4_5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-030-83098-4_5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-030-83098-4_5
+      \endverb
+    \endentry
+    \entry{P_rez_Salinas_2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0a4ae88d26436f0d0b56eb05877adbb1}{%
+           family={Pérez-Salinas},
+           familyi={P\bibinithyphendelim S\bibinitperiod},
+           given={Adrián},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5a2b5e34618e120705e762927644cf0a}{%
+           family={Cervera-Lierta},
+           familyi={C\bibinithyphendelim L\bibinitperiod},
+           given={Alba},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6845e2d50ce6d1ffaad6035e74da9a75}{%
+           family={Gil-Fuster},
+           familyi={G\bibinithyphendelim F\bibinitperiod},
+           given={Elies},
+           giveni={E\bibinitperiod}}}%
+        {{hash=13c0b438394e5d633e01caeb7e5c4879}{%
+           family={Latorre},
+           familyi={L\bibinitperiod},
+           given={JoséI.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschafften}%
+      }
+      \strng{namehash}{1f0e1642444b147c90d08ec3520ed8e4}
+      \strng{fullhash}{69448c864e083183294335c565c5b6d4}
+      \strng{bibnamehash}{1f0e1642444b147c90d08ec3520ed8e4}
+      \strng{authorbibnamehash}{1f0e1642444b147c90d08ec3520ed8e4}
+      \strng{authornamehash}{1f0e1642444b147c90d08ec3520ed8e4}
+      \strng{authorfullhash}{69448c864e083183294335c565c5b6d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantum}
+      \field{month}{2}
+      \field{title}{Data re-uploading for a univeral quantum classifier}
+      \field{volume}{4}
+      \field{year}{2020}
+      \field{pages}{226}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22331/q-2020-02-06-226
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.22331%2Fq-2020-02-06-226
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.22331%2Fq-2020-02-06-226
+      \endverb
+    \endentry
+    \entry{1606.01540}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=7ae2a0efeaf9c031f9b420bcb1c19e54}{%
+           family={Brockman},
+           familyi={B\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ece7baf9b320c51ead8e24c1c6386dbf}{%
+           family={Cheung},
+           familyi={C\bibinitperiod},
+           given={Vicki},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a4d8237d1b7b8daa7b9c2fa891fe4178}{%
+           family={Pettersson},
+           familyi={P\bibinitperiod},
+           given={Ludwing},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5167ef9d0b77bf68557730648baac9b7}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e09bd2a25d237ebdaed560a07c0451e}{%
+           family={Schulman},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d0b3008e85b1a8b38f46556abf1791c7}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e9fec85bbce1b087a6ebefe26e73f7bf}{%
+           family={Zaremba},
+           familyi={Z\bibinitperiod},
+           given={Wojciech},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce46cc7360f33a11d3532ad41aff3485}
+      \strng{fullhash}{40f648ccbc6b8a4dbd3626b2bdfcafcd}
+      \strng{bibnamehash}{ce46cc7360f33a11d3532ad41aff3485}
+      \strng{authorbibnamehash}{ce46cc7360f33a11d3532ad41aff3485}
+      \strng{authornamehash}{ce46cc7360f33a11d3532ad41aff3485}
+      \strng{authorfullhash}{40f648ccbc6b8a4dbd3626b2bdfcafcd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{OpeanAI Gym}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb arXiv:1606.01540
+      \endverb
+    \endentry
+    \entry{Scholik_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a06135f416ef7447cd18b37e84f418d5}{%
+           family={Skolik},
+           familyi={S\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ee55e54bc8f8095c8ab534e75d50ca7f}{%
+           family={Jerbi},
+           familyi={J\bibinitperiod},
+           given={Sofiene},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b420ac4d885f25bf565165efb48b70c7}{%
+           family={Dunjko},
+           familyi={D\bibinitperiod},
+           given={Vedran},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}%
+      }
+      \strng{namehash}{52aca7f6fcbdf53076df37f418bf4797}
+      \strng{fullhash}{52aca7f6fcbdf53076df37f418bf4797}
+      \strng{bibnamehash}{52aca7f6fcbdf53076df37f418bf4797}
+      \strng{authorbibnamehash}{52aca7f6fcbdf53076df37f418bf4797}
+      \strng{authornamehash}{52aca7f6fcbdf53076df37f418bf4797}
+      \strng{authorfullhash}{52aca7f6fcbdf53076df37f418bf4797}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantum}
+      \field{month}{5}
+      \field{title}{Quantum agents in the Gym: a variational quantum algorithm for deep Q-learning}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{pages}{720}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22331/q-2022-05-24-720
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.22331%2Fq-2022-05-24-720
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.22331%2Fq-2022-05-24-720
+      \endverb
+    \endentry
+    \entry{https://doi.org/10.48550/arxiv.2112.11921}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4e92ab78bd561391aa0155a8bf870452}{%
+           family={Lan},
+           familyi={L\bibinitperiod},
+           given={Qingfeng},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{4e92ab78bd561391aa0155a8bf870452}
+      \strng{fullhash}{4e92ab78bd561391aa0155a8bf870452}
+      \strng{bibnamehash}{4e92ab78bd561391aa0155a8bf870452}
+      \strng{authorbibnamehash}{4e92ab78bd561391aa0155a8bf870452}
+      \strng{authornamehash}{4e92ab78bd561391aa0155a8bf870452}
+      \strng{authorfullhash}{4e92ab78bd561391aa0155a8bf870452}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Variational Quantum Soft Actor-Critic}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2112.11921
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2112.11921
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2112.11921
+      \endverb
+      \keyw{Quantum Physics (quant-ph),Artificial Intelligence (cs.AI),Machine Learning (cs.LG),FOS: Physical sciences,FOS: Physical sciences,FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
   \enddatalist
 \endrefsection

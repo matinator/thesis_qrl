@@ -6,12 +6,26 @@
 \contentsline {subsubsection}{\numberline {1.2.2}Q-learning}{8}{subsubsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.3}Deep reinforcement learning}{11}{subsection.1.3}%
 \contentsline {subsubsection}{\numberline {1.3.1}Deep Q-learning}{11}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Policy gradient methods}{14}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Soft Actor Critic}{15}{subsubsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.4}Quantum computing}{16}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.3.2}Policy gradient methods}{13}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Soft Actor Critic}{14}{subsubsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.4}Quantum computing}{15}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}Quantum bits}{16}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}Quantum gates and circuits}{19}{subsubsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.3}Quantum decoherence}{22}{subsubsection.1.4.3}%
-\contentsline {subsubsection}{\numberline {1.4.4}Encoding algorithms}{22}{subsubsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.5}Summary}{23}{subsection.1.5}%
-\contentsline {section}{Bibliography}{24}{section*.5}%
+\contentsline {subsubsection}{\numberline {1.4.2}Quantum gates and circuits}{18}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Quantum decoherence}{21}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}Encoding algorithms}{21}{subsubsection.1.4.4}%
+\contentsline {section}{\numberline {2}Variational circuits applied to deep reinforcement learning}{23}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Variational Circuit}{23}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Deterministic quantum model}{24}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Probabilistic quantum model}{25}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Quantum models as linear combinations of periodic functions}{27}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Variational algorithm training}{28}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Variational algorithm as neural networks}{29}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Data reuploading}{30}{subsubsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.2}Quantum Deep Q-learning applied to Cartpole}{31}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Ansatz for VQA}{32}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.3}Variational quantum algorithm on robotic arm}{35}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Environment}{35}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Quantum SAC}{36}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Results with hybrid actor}{37}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Results with hybrid actor and critic}{41}{subsubsection.2.3.4}%
+\contentsline {section}{Bibliography}{45}{section*.5}%
