@@ -283,7 +283,7 @@ As it can be seen, this kind of layer applies the data-reuploading approach alre
 	\caption{Final structure for cartpole}
 	\label{dqn hybrid}
 \end{figure}
-The original implementation used as libraries pennylane and pytorch, this made the algorithm take around 11 hours for 5000 episodes. Due to the requirement of benchmarking the code has been rewritten using tensorflow quantum. This allowed a speedup by reducing the time required ...\\
+The original implementation used as libraries pennylane and pytorch, this made the algorithm take around 11 hours for 5000 episodes. Due to the requirement of benchmarking the code has been rewritten using tensorflow quantum, this allowed a speedup by reducing the time required by at least 11-12 times.
 By applying multiple runs and confronting the runs made by the quantum algorithm and different kind of neural network this result is obtained:
 \begin{figure}[!h]
 	\centering
@@ -441,7 +441,8 @@ So effectively the most impacting component on the ability of reaching the goal 
 \end{tabular}
 \newline
 \vspace{0.5 cm}
-\newline\begin{tabular}{|c|c|c|}
+\newline
+\begin{tabular}{|c|c|c|}
 	\hline
 	Hyperparameters & VQA 4 layers reduced & VQA 5 layers reduced  \\
 	\hline
@@ -566,7 +567,8 @@ Now that the previous test have demonstrated that critic is the component that d
 	}
 	\caption{Structure for critic hybrid}
 	\label{critic hybrid}
-\end{figure}\\
+\end{figure}
+\newpage
 As it can be seen from the plot \ref{fig:fully_vs_partial_quantum} by converting all components to hybrid architecture it was able to have a performance veery similar to the ones with only hybrid actor. As it will be seen later this means that a smaller component that uses few parameters is able to reach the same performance of one with more on the Neural network. Reason for which this line is interrupted after only 250000 steps is maily due to the high time required, in fact to reach that step the fully hybrid algorithm took more than a week and after concluding that the algorithm was performing very similarly to the actor hybrid it was stopped.\\
 \begin{figure}[H]
 	\centering
@@ -584,10 +586,108 @@ Afterward to have a detailed cased for which multiple configuration with differe
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{"img/Best classical vs all hybrid results"}
-	\caption{Plot of best classical runs and all-hybrid}
+	\caption{Plot of classical runs and all-hybrid}
 	\label{fig:best-classical-vs-all-hybrid-results}
 \end{figure}
 \newpage
-
-So by looking at \ref{fig:best-classical-vs-all-hybrid-results} an important result can be obtained, the all-hybrid run is able to reach a similar performance of all neural networks components that use an higher number of neurons to reach the objective with a similar trend and time steps required. \textbf{But if the neural network model uses a similar parameter number of all-hybrid model then it will not be able to reach the objective}.
-
+So by looking at \ref{fig:best-classical-vs-all-hybrid-results} an important result can be obtained, the all-hybrid run is able to reach a similar performance of all neural networks components that use an higher number of neurons to reach the objective with a similar trend and time steps required. \textbf{But if the neural network model uses a similar parameter number of all-hybrid model then it will not be able to reach the objective}.Furthermore all the test runned have almost all the same hyperparameters for every one of them, in order to have a more equal confrontation of this methods. The configurations used for these runs are:
+\newline
+\vspace{0.2cm}
+\newline
+\begin{tabular}{|c|c|c|}
+	\hline
+	Hyperparameters & Critic hidden 21 neurons & Critic hidden 32 neurons \\
+	\hline
+	$\gamma$ & 0.99 & 0.99  \\
+	\hline
+	$\alpha$ & 0.2 & 0.2  \\
+	\hline
+	learning rate & 0.0003 & 0.0003  \\
+	\hline
+	memory size & 1000000 & 1000000   \\
+	\hline
+	optimizer & Adam & Adam  \\
+	\hline
+	actor neurons & (6,24,(1,1)) & (6,24,(1,1))  \\
+	\hline
+	actor act. func. & (linear,relu,linear) & (linear,relu,linear) \\
+	\hline
+	actor params & 149 & 149 \\
+	\hline
+	critic neurons & (8,21,21,1) & (8,32,32,1)  \\
+	\hline
+	critic act. func. & (linear,relu,relu,linear) & (linear,relu,relu,linear) \\
+	\hline
+	critic params & 651 & 1344 \\
+	\hline
+	total params & 2753 & 5525 \\
+	\hline
+\end{tabular}
+\newline
+\vspace{0.5 cm}
+\newline
+\begin{tabular}{|c|c|c|}
+	\hline
+	Hyperparameters & Critic hidden 64 neurons & Critic hidden 128 neurons \\
+	\hline
+	$\gamma$ & 0.99 & 0.99  \\
+	\hline
+	$\alpha$ & 0.2 & 0.2  \\
+	\hline
+	learning rate & 0.0003 & 0.0003  \\
+	\hline
+	memory size & 1000000 & 1000000   \\
+	\hline
+	optimizer & Adam & Adam  \\
+	\hline
+	actor neurons & (6,24,(1,1)) & (6,24,(1,1))  \\
+	\hline
+	actor act. func. & (linear,relu,linear) & (linear,relu,linear) \\
+	\hline
+	actor params & 149 & 149 \\
+	\hline
+	critic neurons & (8,64,64,1) & (8,128,128,1)  \\
+	\hline
+	critic act. func. & (linear,relu,relu,linear) & (linear,relu,relu,linear) \\
+	\hline
+	critic params & 4672 & 17536 \\
+	\hline
+	total params & 18837 & 70293 \\
+	\hline
+\end{tabular}
+\newline
+\vspace{0.5 cm}
+\newline
+\begin{tabular}{|c|c|c|}
+	\hline
+	Hyperparameters & Critic hidden 256 neurons & All hybrid \\
+	\hline
+	$\gamma$ & 0.99 & 0.99  \\
+	\hline
+	$\alpha$ & 0.2 & 0.2  \\
+	\hline
+	learning rate & 0.0003 & 0.0003  \\
+	\hline
+	memory size & 1000000 & 1000000   \\
+	\hline
+	optimizer & Adam & Adam  \\
+	\hline
+	actor neurons & (6,24,(1,1)) & (6,VQA(5 layers),(1,1))  \\
+	\hline
+	actor act. func. & (linear,relu,linear) & (linear,relu,linear) \\
+	\hline
+	actor params & 149 & 112 \\
+	\hline
+	critic neurons & (8,256,256,1) & (8,VQA(20 layers),8,1)  \\
+	\hline
+	critic act. func. & (linear,relu,relu,linear) & (linear,relu,relu,linear) \\
+	\hline
+	critic params & 67840 & 650 \\
+	\hline
+	total params & 271.509 & 2712 \\
+	\hline
+\end{tabular}
+\newline
+\vspace{0.2 cm}
+\newline
+Focusing on the number of parameters and the previous plots a conclusion can be extrapolated: in order to have similar trends between the hybrid model and neural networks, which are the ones with 64 neurons for hidden layers or more, it is required to have at least 7 times the number of parameters!. In fact from the previous table hybrid model uses around 2700 parameters, while the neural network with 64 uses 19000. Furthermore as it can be seen from plot \ref{fig:best-classical-vs-all-hybrid-results} even the biggest neural network is not always able to follow the trend of the hybrid and reach the objective with same number of steps and notice that uses around 100 times the parameters of hybrid.

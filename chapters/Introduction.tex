@@ -125,7 +125,6 @@ The problem is that in many situations we don't know how the value of actions, r
 		\ENDWHILE
 	\end{algorithmic}
 \end{algorithm}\\
-
 This Tabular Q-learning present major drawbacks such as:
 \begin{itemize}
 	\item A large memory table is required to store all the values used to approximate the $Q(s,a)$ values that will be used for the $\pi(s|a)$
@@ -152,7 +151,6 @@ In order to resolve these drawbacks a new type of Q-learning algorithm called \t
 		\ENDLOOP
 	\end{algorithmic}
 \end{algorithm}\\
-
 As noted, a memory table is required but only to store the $Q(s,a)$ values and it will be used to update itself and to define which action need to be taken following the policy.
 There is still one major problem though, this algorithm will struggle if there is a large count of the observables state set. This, in many real life situation, is quite common for example on the Cartpole environment of OpenAI gym that we are going to use there are only 4 states, but the interval of values that can be taken is enormous.
 A solution of this problem would be to use a non-linear representation of action and state into a value. This is a typical "regression problem" in the field of machine learning and thanks to the power of \acrfull{nn} it is possible to approximate any kind of linear or non-linear function given enough data. Fortunately the amount of data is almost limitless thanks to the fact that if new data is needed, the only requirement is to interact more with the given environment.So now, it will be introduced the \textbf{Deep Q-learning} algorithm.
@@ -173,7 +171,6 @@ Generally the following point are required to train a neural network to solve an
 	\item Update $Q(s,a)$ using an optimizer algorithm to minimize loss.
 	\item Repeat from step 2 until convergence or goal reached.
 \end{enumerate}
-
 Even if it looks simple, some modifications are required in other to ensure convergence.
 First of all when it is necessary to store the experience we need to find a strategy to explore the environment and optimize the current approximation, this is often referred to "exploration versus exploitation". In order to have an efficient solution it is good to behave randomly at the beginning because Q-value approximation is bad at that time and later start to act using the Q-value obtained. Usually it is used the \textbf{epsilon-greedy method} where a random probability value is sampled from a uniform distribution and confronted with a probability $\epsilon$  that tells the algorithm to behave randomly. $\epsilon$ is usually initialized to 1 so that any kind of random value sampled is smaller to $\epsilon$ so that the model behave randomly and later $\epsilon$ is decreased to a final small value so that the model will not always behave randomly but use the Q-values approximated. 
 After that this problem is solved, there is another matter linked to how an optimizer algorithm work on a \acrshort{nn}. The gradients calculated from input data requires that the data are \acrshort{iid}, otherwise there would be incorrect estimations of the correct direction on which the parameters must be updated. Furthermore the data must not be completely randomic but must reflect the past actions taken in order to have an experience that tells which action are worst than others. To solve this, it is necessary to create a \textbf{large memory buffer} in order to store the past actions taken both randomic and by exploiting the agent.
@@ -200,7 +197,6 @@ The following pseudo is taken from the original paper that was tested on atari g
 	\ENDWHILE		
 	\end{algorithmic}
 \end{algorithm}\\
-
 The \ref{DQN} gave a breakthrough on this field thanks to the fact that was able to achieve a human-like, and in some cases even better, performance on multiple games of the atari. Thanks to this \acrlong{drl} has been tested and applied in other contexts such as finance, medicine, robotics and many others. Before we introduce quantum computing it is necessary to explain and describe another algorithm that is able to handle \acrlong{mdp} without the value iteration method: \textbf{policy gradient methods}.
 \subsubsection{Policy gradient methods}
 The \acrshort{dqn} that we have illustrated is focusing mainly on approximating the value of actions($Q$) and the value of state($V$) so that afterward the choice on which action to take is based on a greedy approach: the best action to take is the one that maximize the return. This is not incorrect, but in some cases it may not be good due to the environment consequences. For this reason in those cases it is better to focus on how to define the agent behaviour in order to consider vene the possible alternatives. Another reason why these methods are used is due to the fact that can introduce \textbf{stochasticity} and can work on \textbf{continous environment} differently from the \acrshort{dqn} showed.

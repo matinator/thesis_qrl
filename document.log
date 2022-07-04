@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.29)  3 JUL 2022 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.29)  4 JUL 2022 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1319,7 +1319,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotelevel=\count485
 \@quotereset=\count486
 (document.aux (chapters/abstract.aux) (chapters/Introduction.aux)
-(chapters/vqa_reinforcement.aux))
+(chapters/vqa_reinforcement.aux) (chapters/conclusion.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -1455,39 +1455,24 @@ ic func-
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 106.
 
-Overfull \hbox (0.85951pt too wide) in paragraph at lines 103--128
+Overfull \hbox (0.85951pt too wide) in paragraph at lines 103--129
 \T1/cmr/m/n/12 tions, re-wards, tran-si-tion prob-a-bil-i-ties.Due to this it t
 he fol-low-ing \T1/cmr/bx/n/12 Q-learning
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--155
-
- []
-
 [9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 [] []\T1/cmr/m/n/12 Memory buffer of di-men-sion $\OML/cmm/m/it/12 N$ \T1/cmr/m
 /n/12 con-tain-ing tu-ple:
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--203
-
- []
-
 [12] [13]
-Overfull \hbox (7.23303pt too wide) in paragraph at lines 228--229
+Overfull \hbox (7.23303pt too wide) in paragraph at lines 224--225
  [][] 
  []
 
 [14] [15] [16] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 393--396
+Underfull \hbox (badness 10000) in paragraph at lines 389--392
 
  []
 
@@ -1530,7 +1515,7 @@ Overfull \hbox (8.17834pt too wide) in paragraph at lines 95--96
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29] [30]
-<img/cartpole.jpg, id=542, 475.7775pt x 475.7775pt>
+<img/cartpole.jpg, id=557, 475.7775pt x 475.7775pt>
 File: img/cartpole.jpg Graphic file (type jpg)
 <use img/cartpole.jpg>
 Package pdftex.def Info: img/cartpole.jpg  used on input line 223.
@@ -1545,7 +1530,7 @@ Overfull \hbox (39.27pt too wide) in paragraph at lines 251--283
  [][] 
  []
 
-<img/VQCNNcomparisonmedia.jpg, id=553, 1084.05pt x 686.565pt>
+<img/VQCNNcomparisonmedia.jpg, id=568, 1084.05pt x 686.565pt>
 File: img/VQCNNcomparisonmedia.jpg Graphic file (type jpg)
 <use img/VQCNNcomparisonmedia.jpg>
 Package pdftex.def Info: img/VQCNNcomparisonmedia.jpg  used on input line 290.
@@ -1554,7 +1539,7 @@ Package pdftex.def Info: img/VQCNNcomparisonmedia.jpg  used on input line 290.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [32] [33 <./img/VQCNNcomparisonmedia.jpg>]
-<img/tfq.png, id=568, 526.96875pt x 205.9695pt>
+<img/tfq.png, id=583, 526.96875pt x 205.9695pt>
 File: img/tfq.png Graphic file (type png)
 <use img/tfq.png>
 Package pdftex.def Info: img/tfq.png  used on input line 329.
@@ -1566,20 +1551,20 @@ Overfull \hbox (4.01372pt too wide) in paragraph at lines 325--337
  []
 
 [34 <./img/tfq.png>]
-<img/quantum_robotic_arm_SAC_4182.jpeg, id=578, 199.49532pt x 210.7875pt>
+<img/quantum_robotic_arm_SAC_4182.jpeg, id=593, 199.49532pt x 210.7875pt>
 File: img/quantum_robotic_arm_SAC_4182.jpeg Graphic file (type jpg)
 <use img/quantum_robotic_arm_SAC_4182.jpeg>
 Package pdftex.def Info: img/quantum_robotic_arm_SAC_4182.jpeg  used on input l
 ine 342.
 (pdftex.def)             Requested size: 176.69026pt x 186.6997pt.
  [35 <./img/quantum_robotic_arm_SAC_4182.jpeg>]
-<img/qsac.png, id=595, 329.43076pt x 160.80075pt>
+<img/qsac.png, id=610, 329.43076pt x 160.80075pt>
 File: img/qsac.png Graphic file (type png)
 <use img/qsac.png>
 Package pdftex.def Info: img/qsac.png  used on input line 377.
 (pdftex.def)             Requested size: 235.59102pt x 114.99864pt.
  [36]
-<img/VQA and classic actor.png, id=621, 1806.75pt x 1300.86pt>
+<img/VQA and classic actor.png, id=636, 1806.75pt x 1300.86pt>
 File: img/VQA and classic actor.png Graphic file (type png)
 <use img/VQA and classic actor.png>
 Package pdftex.def Info: img/VQA and classic actor.png  used on input line 389.
@@ -1587,95 +1572,111 @@ Package pdftex.def Info: img/VQA and classic actor.png  used on input line 389.
 (pdftex.def)             Requested size: 314.11935pt x 226.16519pt.
 
 [37 <./img/qsac.png>]
-<img/classics actor.png, id=630, 1806.75pt x 1300.86pt>
+<img/classics actor.png, id=645, 1806.75pt x 1300.86pt>
 File: img/classics actor.png Graphic file (type png)
 <use img/classics actor.png>
 Package pdftex.def Info: img/classics actor.png  used on input line 397.
 (pdftex.def)             Requested size: 314.11935pt x 226.16519pt.
  [38 <./img/VQA and classic actor.png>]
-<img/VQA critic reduced.png, id=637, 1806.75pt x 1300.86pt>
+<img/VQA critic reduced.png, id=652, 1806.75pt x 1300.86pt>
 File: img/VQA critic reduced.png Graphic file (type png)
 <use img/VQA critic reduced.png>
 Package pdftex.def Info: img/VQA critic reduced.png  used on input line 404.
 (pdftex.def)             Requested size: 314.11935pt x 226.16519pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--507
+Underfull \hbox (badness 10000) in paragraph at lines 409--508
 
  []
 
-[39 <./img/classics actor.png> <./img/VQA critic reduced.png>] [40]
-<img/fully_vs_partial_quantum.png, id=651, 1806.75pt x 1300.86pt>
+[39 <./img/classics actor.png> <./img/VQA critic reduced.png>] [40] [41]
+<img/fully_vs_partial_quantum.png, id=671, 1806.75pt x 1300.86pt>
 File: img/fully_vs_partial_quantum.png Graphic file (type png)
 <use img/fully_vs_partial_quantum.png>
 Package pdftex.def Info: img/fully_vs_partial_quantum.png  used on input line 5
-73.
+75.
 (pdftex.def)             Requested size: 392.6477pt x 282.69658pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--576
+Underfull \hbox (badness 10000) in paragraph at lines 572--578
 
  []
 
-[41]
-<img/All classical results.png, id=660, 1806.75pt x 1300.86pt>
+<img/All classical results.png, id=674, 1806.75pt x 1300.86pt>
 File: img/All classical results.png Graphic file (type png)
 <use img/All classical results.png>
-Package pdftex.def Info: img/All classical results.png  used on input line 580.
+Package pdftex.def Info: img/All classical results.png  used on input line 582.
 
 (pdftex.def)             Requested size: 353.38052pt x 254.4309pt.
-<img/Best classical vs all hybrid results.png, id=661, 1806.75pt x 1300.86pt>
+[42 <./img/fully_vs_partial_quantum.png>]
+<img/Best classical vs all hybrid results.png, id=682, 1806.75pt x 1300.86pt>
 File: img/Best classical vs all hybrid results.png Graphic file (type png)
 <use img/Best classical vs all hybrid results.png>
 Package pdftex.def Info: img/Best classical vs all hybrid results.png  used on 
-input line 586.
+input line 588.
 (pdftex.def)             Requested size: 353.38052pt x 254.4309pt.
- [42 <./img/fully_vs_partial_quantum.png>] [43 <./img/All classical results.png
-> <./img/Best classical vs all hybrid results.png>]) [44]
+ [43 <./img/All classical results.png> <./img/Best classical vs all hybrid resu
+lts.png>]) [44] [45]
+\openout2 = `chapters/conclusion.aux'.
+
+
+(chapters/conclusion.tex [46
+
+
+
+]) [47]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-3.
+4.
 
 (C:\Users\matte\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (1.4554pt too wide) in paragraph at lines 66--66
+Overfull \hbox (1.4554pt too wide) in paragraph at lines 67--67
 \T1/cmr/m/it/12 CoRR \T1/cmr/m/n/12 abs/1707.06347 (2017). arXiv: []$\T1/cmtt/m
 /n/12 1707 . 06347$[]\T1/cmr/m/n/12 . \T1/cmr/m/sc/12 url\T1/cmr/m/n/12 : []$\T
 1/cmtt/m/n/12 http : / / arxiv .
  []
 
 
-Overfull \hbox (3.94652pt too wide) in paragraph at lines 66--66
+Overfull \hbox (3.94652pt too wide) in paragraph at lines 67--67
 []\T1/cmr/m/n/12 Maria Schuld and Francesco Petruc-cione. ``Rep-re-sent-ing Dat
 a on a Quan-
  []
 
 
-Overfull \hbox (3.21376pt too wide) in paragraph at lines 66--66
+Overfull \hbox (3.21376pt too wide) in paragraph at lines 67--67
 \T1/cmr/m/n/12 tum Com-puter''. In: \T1/cmr/m/it/12 Ma-chine Learn-ing with Qua
 n-tum Com-put-ers\T1/cmr/m/n/12 . Cham:
  []
 
-[45
+[48
 
 
 ]
-Overfull \hbox (12.10889pt too wide) in paragraph at lines 66--66
+Overfull \hbox (12.10889pt too wide) in paragraph at lines 67--67
 \T1/cmr/m/n/12 en-cod-ing on the ex-pres-sive power of vari-a-tional quantum-ma
 chine-learning
  []
 
-[46] (document.aux (chapters/abstract.aux) (chapters/Introduction.aux)
-(chapters/vqa_reinforcement.aux))
+[49] (document.aux (chapters/abstract.aux) (chapters/Introduction.aux)
+(chapters/vqa_reinforcement.aux) (chapters/conclusion.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 20B58E4CF122B62313B255D16801FC16;6056.
+(rerunfilecheck)             Checksum: FAF4EEE4664C44EA80407AD96BC53213;6437.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                document
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45240 strings out of 478351
- 925331 string characters out of 2837052
- 1644506 words of memory out of 3000000
- 62689 multiletter control sequences out of 15000+600000
+ 45277 strings out of 478351
+ 926623 string characters out of 2837052
+ 1648187 words of memory out of 3000000
+ 62713 multiletter control sequences out of 15000+600000
  486698 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,24n,91p,1431b,2161s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1714,9 +1715,9 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/User
 s/matte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <C:/Users/matte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on document.pdf (46 pages, 2237422 bytes).
+Output written on document.pdf (49 pages, 2359427 bytes).
 PDF statistics:
- 1245 PDF objects out of 1440 (max. 8388607)
- 228 named destinations out of 1000 (max. 500000)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1297 PDF objects out of 1440 (max. 8388607)
+ 234 named destinations out of 1000 (max. 500000)
+ 332 words of extra memory for PDF output out of 10000 (max. 10000000)
 
