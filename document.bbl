@@ -19,6 +19,64 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{10.5555/3279266}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ce3791d4efec6b5ed02ae4c24d61f4ca}{%
+           family={Lapan},
+           familyi={L\bibinitperiod},
+           given={Maxim},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{ce3791d4efec6b5ed02ae4c24d61f4ca}
+      \strng{fullhash}{ce3791d4efec6b5ed02ae4c24d61f4ca}
+      \strng{bibnamehash}{ce3791d4efec6b5ed02ae4c24d61f4ca}
+      \strng{authorbibnamehash}{ce3791d4efec6b5ed02ae4c24d61f4ca}
+      \strng{authornamehash}{ce3791d4efec6b5ed02ae4c24d61f4ca}
+      \strng{authorfullhash}{ce3791d4efec6b5ed02ae4c24d61f4ca}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This practical guide will teach you how deep learning (DL) can be used to solve complex real-world problems. Key Features Explore deep reinforcement learning (RL), from the first principles to the latest algorithms Evaluate high-profile RL methods, including value iteration, deep Q-networks, policy gradients, TRPO, PPO, DDPG, D4PG, evolution strategies and genetic algorithms Keep up with the very latest industry developments, including AI-driven chatbots Book Description Recent developments in reinforcement learning (RL), combined with deep learning (DL), have seen unprecedented progress made towards training agents to solve complex problems in a human-like way. Google's use of algorithms to play and defeat the well-known Atari arcade games has propelled the field to prominence, and researchers are generating new ideas at a rapid pace. Deep Reinforcement Learning Hands-On is a comprehensive guide to the very latest DL tools and their limitations. You will evaluate methods including Cross-entropy and policy gradients, before applying them to real-world environments. Take on both the Atari set of virtual games and family favorites such as Connect4. The book provides an introduction to the basics of RL, giving you the know-how to code intelligent learning agents to take on a formidable array of practical tasks. Discover how to implement Q-learning on 'grid world' environments, teach your agent to buy and trade stocks, and find out how natural language models are driving the boom in chatbots. What you will learn Understand the DL context of RL and implement complex DL modelsLearn the foundation of RL: Markov decision processes Evaluate RL methods including Cross-entropy, DQN, Actor-Critic, TRPO, PPO, DDPG, D4PG and others Discover how to deal with discrete and continuous action spaces in various environments Defeat Atari arcade games using the value iteration method Create your own Open AI Gym environment to train a stock trading agent Teach your agent to play Connect 4 using AlphaGo Zero Explore the very latest deep RL research on topics including AI-driven chatbots Who This Book Is For Some fluency in Python is assumed. Basic deep learning (DL) approaches should be familiar to readers and some practical experience in DL will be helpful. This book is an introduction to deep reinforcement learning (RL) and requires no background in RL.}
+      \field{isbn}{1788834240}
+      \field{title}{Deep Reinforcement Learning Hands-On: Apply Modern RL Methods, with Deep Q-Networks, Value Iteration, Policy Gradients, TRPO, AlphaGo Zero and More}
+      \field{year}{2018}
+    \endentry
+    \entry{nielsen_chuang_2010}{book}{}
+      \name{author}{2}{}{%
+        {{hash=afe17482fc813e497188aee3b3783879}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=415ddff2f58b25977b1a2dedf18f4501}{%
+           family={Chuang},
+           familyi={C\bibinitperiod},
+           given={Isaac\bibnamedelima L.},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{fullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{bibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorbibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authornamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorfullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Computation and Quantum Information: 10th Anniversary Edition}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1017/CBO9780511976667
+      \endverb
+    \endentry
     \entry{Rosenblatt1958ThePA}{article}{}
       \name{author}{1}{}{%
         {{hash=9e8511ef13d0cdda3a709b93fa650e71}{%
@@ -33,8 +91,8 @@
       \strng{authorbibnamehash}{9e8511ef13d0cdda3a709b93fa650e71}
       \strng{authornamehash}{9e8511ef13d0cdda3a709b93fa650e71}
       \strng{authorfullhash}{9e8511ef13d0cdda3a709b93fa650e71}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Psychological review}
@@ -61,8 +119,8 @@
       \strng{authorbibnamehash}{d2ec2f3b0af5a8dd49ec92f3c2bf54c6}
       \strng{authornamehash}{d2ec2f3b0af5a8dd49ec92f3c2bf54c6}
       \strng{authorfullhash}{d2ec2f3b0af5a8dd49ec92f3c2bf54c6}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature}
@@ -92,8 +150,8 @@
       \strng{authorbibnamehash}{a557eabee3d6b8b0344b9b967dce25e2}
       \strng{authornamehash}{a557eabee3d6b8b0344b9b967dce25e2}
       \strng{authorfullhash}{a557eabee3d6b8b0344b9b967dce25e2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neural Networks}
@@ -151,8 +209,8 @@
       \strng{authorbibnamehash}{aff24b211b34cdd515b2fd148ce0c920}
       \strng{authornamehash}{aff24b211b34cdd515b2fd148ce0c920}
       \strng{authorfullhash}{6b0f449f9bda6a021aba6cd00e25fb34}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -196,8 +254,8 @@
       \strng{authorbibnamehash}{2bcc40866d8b979d51a84d2f43f45202}
       \strng{authornamehash}{2bcc40866d8b979d51a84d2f43f45202}
       \strng{authorfullhash}{2bcc40866d8b979d51a84d2f43f45202}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -250,8 +308,8 @@
       \strng{authorbibnamehash}{176c86aa36fab51e81d033c2d8ea8cbe}
       \strng{authornamehash}{176c86aa36fab51e81d033c2d8ea8cbe}
       \strng{authorfullhash}{6b36fd87902dbca910efbc0f913a7749}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Function approximation is essential to reinforcement learning, but the standard approach of approximating a value function and determining a policy from it has so far proven theoretically intractable. In this paper we explore an alternative approach in which the policy is explicitly represented by its own function approximator, independent of the value function, and is updated according to the gradient of expected reward with respect to the policy parameters. Williams's REINFORCE method and actor-critic methods are examples of this approach. Our main new result is to show that the gradient can be written in a form suitable for estimation from experience aided by an approximate action-value or advantage function. Using this result, we prove for the first time that a version of policy iteration with arbitrary differentiable function approximation is convergent to a locally optimal policy.}
@@ -308,8 +366,8 @@
       \strng{authorbibnamehash}{ce0f3d71b18ee7367558a7b6d6e6973e}
       \strng{authornamehash}{ce0f3d71b18ee7367558a7b6d6e6973e}
       \strng{authorfullhash}{df8349b49d629c1c7c91f1e294d2c6c4}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -361,8 +419,8 @@
       \strng{authorbibnamehash}{8d6613ae59595910252a86a61babf6c8}
       \strng{authornamehash}{8d6613ae59595910252a86a61babf6c8}
       \strng{authorfullhash}{a6c6ed5a5aeb74e536f16291276ae392}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -409,8 +467,8 @@
       \strng{authorbibnamehash}{b8c131de85c5000ff50df59a4d062227}
       \strng{authornamehash}{b8c131de85c5000ff50df59a4d062227}
       \strng{authorfullhash}{951e86110020d3107317b3e819f3d92d}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -466,53 +524,6 @@
       \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2276774
-      \endverb
-    \endentry
-    \entry{Schuld2021}{inbook}{}
-      \name{author}{2}{}{%
-        {{hash=566bc76219b4c730f8c2d46f5dcc455a}{%
-           family={Schuld},
-           familyi={S\bibinitperiod},
-           given={Maria},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4b215190f542b12fd214896e21eff64b}{%
-           family={Petruccione},
-           familyi={P\bibinitperiod},
-           given={Francesco},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Cham}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{fullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{bibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{authorbibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{authornamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{authorfullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This chapter presents one of the most important parts of quantum machine learning algorithms, namely strategies with which a single data point, or sometimes an entire dataset, can be encoded into quantum states. We present quantum routines for this task, discuss their runtimes and review their interpretation as feature maps known in classical machine learning.}
-      \field{booktitle}{Machine Learning with Quantum Computers}
-      \field{isbn}{978-3-030-83098-4}
-      \field{title}{Representing Data on a Quantum Computer}
-      \field{year}{2021}
-      \field{pages}{147\bibrangedash 176}
-      \range{pages}{30}
-      \verb{doi}
-      \verb 10.1007/978-3-030-83098-4_4
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/978-3-030-83098-4_4
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/978-3-030-83098-4_4
       \endverb
     \endentry
     \entry{Cerezo_2021}{article}{}
@@ -603,6 +614,52 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1038%2Fs42254-021-00348-9
+      \endverb
+    \endentry
+    \entry{Schuld2021vqa}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=566bc76219b4c730f8c2d46f5dcc455a}{%
+           family={Schuld},
+           familyi={S\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b215190f542b12fd214896e21eff64b}{%
+           family={Petruccione},
+           familyi={P\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{fullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{bibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authorbibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authornamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \strng{authorfullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We explain how parametrised quantum circuits---quantum algorithms that are popular in near-term quantum computing---can be used as machine learning models, and review techniques to analyse and train such quantum models in a deep-learning fashion, including measures of expressivity and trainability, as well as parameter-shift rules.}
+      \field{booktitle}{Machine Learning with Quantum Computers}
+      \field{isbn}{978-3-030-83098-4}
+      \field{title}{Variational Circuits as Machine Learning Models}
+      \field{year}{2021}
+      \field{pages}{177\bibrangedash 215}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1007/978-3-030-83098-4_5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-030-83098-4_5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-030-83098-4_5
       \endverb
     \endentry
     \entry{https://doi.org/10.48550/arxiv.1802.06002}{misc}{}
@@ -843,8 +900,8 @@
       \strng{authorbibnamehash}{05e40d60659c19fd2074b38b72e4b0a7}
       \strng{authornamehash}{05e40d60659c19fd2074b38b72e4b0a7}
       \strng{authorfullhash}{94c0a2107854bc5a961f54aaca368e51}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Quantum}
@@ -862,53 +919,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.22331%2Fq-2019-12-09-214
-      \endverb
-    \endentry
-    \entry{Schuld2021vqa}{inbook}{}
-      \name{author}{2}{}{%
-        {{hash=566bc76219b4c730f8c2d46f5dcc455a}{%
-           family={Schuld},
-           familyi={S\bibinitperiod},
-           given={Maria},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4b215190f542b12fd214896e21eff64b}{%
-           family={Petruccione},
-           familyi={P\bibinitperiod},
-           given={Francesco},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Cham}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{fullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{bibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{authorbibnamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{authornamehash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \strng{authorfullhash}{2aeac50fe58b98b77f0aec56f0b52e2e}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We explain how parametrised quantum circuits---quantum algorithms that are popular in near-term quantum computing---can be used as machine learning models, and review techniques to analyse and train such quantum models in a deep-learning fashion, including measures of expressivity and trainability, as well as parameter-shift rules.}
-      \field{booktitle}{Machine Learning with Quantum Computers}
-      \field{isbn}{978-3-030-83098-4}
-      \field{title}{Variational Circuits as Machine Learning Models}
-      \field{year}{2021}
-      \field{pages}{177\bibrangedash 215}
-      \range{pages}{39}
-      \verb{doi}
-      \verb 10.1007/978-3-030-83098-4_5
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/978-3-030-83098-4_5
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/978-3-030-83098-4_5
       \endverb
     \endentry
     \entry{P_rez_Salinas_2020}{article}{}

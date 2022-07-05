@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {1.4.1}Quantum bits}{16}{subsubsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.2}Quantum gates and circuits}{18}{subsubsection.1.4.2}%
 \contentsline {subsubsection}{\numberline {1.4.3}Quantum decoherence}{21}{subsubsection.1.4.3}%
-\contentsline {subsubsection}{\numberline {1.4.4}Encoding algorithms}{21}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.4}Encoding algorithms}{22}{subsubsection.1.4.4}%
 \contentsline {section}{\numberline {2}Variational circuits applied to deep reinforcement learning}{23}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Variational Circuit}{23}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Deterministic quantum model}{24}{subsubsection.2.1.1}%
@@ -26,9 +26,9 @@
 \contentsline {subsection}{\numberline {2.3}Variational quantum algorithm on robotic arm}{35}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Environment}{35}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Quantum SAC}{36}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Results with hybrid actor}{37}{subsubsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Results with hybrid actor and critic}{41}{subsubsection.2.3.4}%
-\contentsline {section}{\numberline {3}Conclusion}{46}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Results obtained}{46}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Future directions}{47}{subsection.3.2}%
-\contentsline {section}{Bibliography}{48}{section*.5}%
+\contentsline {subsubsection}{\numberline {2.3.3}Results with hybrid actor}{38}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Results with hybrid actor and critic}{43}{subsubsection.2.3.4}%
+\contentsline {section}{\numberline {3}Conclusion}{48}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Results obtained}{48}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Future directions}{49}{subsection.3.2}%
+\contentsline {section}{Bibliography}{50}{section*.5}%
